@@ -9,14 +9,19 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body>
+<body oncontextmenu="return false">
     <section class="nav">
-        <nav class='navbar container'>
+        <nav class='navbar'>
             <a class="navContent" href="/">
                 <img class="logo" src="./logo10.svg" alt="logo">
                 <span class="logoText" class="navContent">Namaste Droppers</span>
             </a>
         </nav>
+    </section>
+    <section class="toast-container">
+        <div class="toast">
+            ...
+        </div>
     </section>
     <section class="upload-container">
         <div class="drop-zone">
@@ -41,7 +46,7 @@
         <div class="sharing-container">
             <p class='expire'>Link expires in 24 hours</p>
             <div class="input-container">
-                <input type="text" id="fileURL" readonly >
+                <input type="text" id="fileURL" readonly>
                 <img id="copyBtn" src="./copy.svg" alt="copy-icon">
             </div>
             <p>Or Send Via Email</p>
@@ -60,7 +65,17 @@
             </div>
         </div>
     </section>
-    <div class="toast"></div>
+    <footer class="footer">
+        <div class="footer-content" style="font-family: sans-serif; font-size: 10px; color: #99999970; text-align: center; margin: 5px; margin-bottom: 0px;">
+            All rights reserved<a href="https://myportfolio-website-e249f.web.app"
+                style="text-decoration: none; color: #999999; font-size: 10px"> © PARTH GOHIL. </a>
+        </div>
+        <div class="footer-content"
+            style="font-family: sans-serif; padding-bottom: 10px; padding-top: 10px; font-size: 10px; color: #99999970; text-align: center; margin: 5px; margin-bottom: 0px;">
+            Powered By <a href="https://namastedroppers.web.app/"
+                style="color: #999999; font-size: 10px; text-align: center; text-decoration: none;">NAMASTE HOMIES.</a>
+        </div>
+    </footer>
     <script src="./index.js"></script>
 </body>
 
